@@ -10,7 +10,7 @@ from ...models import Category
 class CategoriesTestCase(APITestCase):
     def test_empty_db_empty_response(self):
         url = reverse('measure:category-list')
-        response = self.client.get(url, format='json')
+        response = self.client.get(url)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertFalse(json.loads(response.content.decode('utf-8')))
@@ -20,7 +20,7 @@ class CategoriesTestCase(APITestCase):
         Category.objects.create(name='height')
 
         url = reverse('measure:category-list')
-        response = self.client.get(url, format='json')
+        response = self.client.get(url)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertListEqual(
