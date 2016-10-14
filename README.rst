@@ -1,6 +1,9 @@
 TUT
 ===
 
+.. image:: https://travis-ci.org/mpsk2/tut-backend.svg?branch=master
+    :target: https://travis-ci.org/mpsk2/tut-backend
+
 Main reason
 -----------
 
