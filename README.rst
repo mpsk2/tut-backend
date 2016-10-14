@@ -4,6 +4,10 @@ TUT
 .. image:: https://travis-ci.org/mpsk2/tut-backend.svg?branch=master
     :target: https://travis-ci.org/mpsk2/tut-backend
 
+.. image:: https://coveralls.io/repos/github/mpsk2/tut-backend/badge.svg?branch=master
+    :target: https://coveralls.io/github/mpsk2/tut-backend?branch=master
+
+
 Main reason
 -----------
 
